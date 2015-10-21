@@ -1,0 +1,39 @@
+{
+  "name": "string-packer",
+  "version": "1.0.0",
+  "description": "First-fit bin packing to turn a list into delimiter-separated strings",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel/register test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrjoelkemp/string-packer.git"
+  },
+  "keywords": [
+    "string",
+    "packing",
+    "efficient",
+    "delimiter",
+    "first",
+    "fit",
+    "bin",
+    "packing"
+  ],
+  "author": "Joel Kemp <joel@mrjoelkemp.com> (http://www.mrjoelkemp.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrjoelkemp/string-packer/issues"
+  },
+  "homepage": "https://github.com/mrjoelkemp/string-packer#readme",
+  "devDependencies": {
+    "babel": "~5.8.23",
+    "mocha": "~2.3.3"
+  },
+  "dependencies": {
+    "debug": "~2.2.0"
+  }
+}
