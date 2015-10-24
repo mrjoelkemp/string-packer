@@ -1,4 +1,4 @@
-const packer = require('../');
+const packer = require('../src');
 const assert = require('assert');
 
 describe('packer', function() {
