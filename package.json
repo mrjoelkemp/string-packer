@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel/register test/test.js"
+    "test": "mocha --compilers js:babel/register test/test.js",
+    "build": "babel src/ --out-file index.js",
+    "preversion": "npm run build && git add --force index.js && git commit -m 'ES5 build'"
   },
   "repository": {
     "type": "git",

@@ -4,8 +4,6 @@
 
 `npm install string-packer`
 
-**Note: ES6 only**. PRs for ES5 are welcome if you need it.
-
 Built this to optimize the batching of data within an http get request.
 i.e., if you have a list of items that need to fit into a url, squeeze them in there.
 
