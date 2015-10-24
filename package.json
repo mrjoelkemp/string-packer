@@ -1,6 +1,6 @@
 {
   "name": "string-packer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "First-fit bin packing to turn a list into delimiter-separated strings",
   "main": "index.js",
   "directories": {
