@@ -108,4 +108,13 @@ describe('packer', function() {
     assert.equal(results.length, 3);
     assert.equal(results[0], this.list[0]);
   });
+
+  it('includes all of the elements', function() {
+    const results = packer({
+      list: this.list,
+      binSize: 3
+    });
+
+    assert.equal(results.length, this.list.length);
+  });
 });

@@ -21,8 +21,7 @@ module.exports = function({list, binSize, delimiter = ''}) {
   let currentElementIndex = 0;
   let pack = '';
 
-  while (true) {
-    const currentElement = copy[currentElementIndex];
+  copy.forEach((currentElement, currentElementIndex) => {
     debug(`packing current element ${currentElement}`);
 
     pack += currentElement;
@@ -47,14 +46,7 @@ module.exports = function({list, binSize, delimiter = ''}) {
     }
 
     debug(`pack so far: ${pack}`);
-
-    currentElementIndex += 1;
-
-    if (currentElementIndex === copy.length) {
-      debug(`should stop? true`);
-      break;
-    }
-  }
+  });
 
   debug('packed results: ', packed);
   return packed;
